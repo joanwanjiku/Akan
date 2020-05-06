@@ -9,20 +9,47 @@
     </head>
     <body>
         <div class="container">
-            <header>
-                <h1>Akan Naming System</h1>
+            <header class="row">
+                <h1 class = "mx-auto">Akan Naming System</h1>
             </header>
-            <div class="row">
-                <h2>Background</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum blanditiis qui eius ab nemo quis at architecto! 
-                    Voluptates voluptas rerum, possimus quo deserunt aliquid rem molestias, saepe delectus inventore dignissimos.
+            <div class="row background">
+                <h2 class = "mx-auto">Background</h2>
+                <p>
+                    This naming system is practised the by the <strong>Akan</strong> people in Ghana and a few other west african Countries. 
+                    Newborns are given special names depending on the day they are born and the order in which they were born. Most west africans have one name from this naming sysytem.
+
                 </p>
             </div>
-            <div class="row">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda sequi voluptatibus sapiente eligendi? Voluptatibus
-                     nam facere quasi corporis aliquid. Nihil voluptatem ipsa aspernatur accusamus iste magnam pariatur blanditiis sit sunt!
-                </p>
-
+            <div class="row">    
+                <div class="col">
+                    <form>
+                        <div class="form-group row">
+                          <label for="date" class="col-sm-4 col-form-label">Date of Birth</label>
+                          <div class="col-sm-6">
+                            <input type="date" class="form-control" id="date" required>
+                          </div>
+                        </div>
+                        <fieldset class="form-group">
+                            <div class="row">
+                                <legend class="col-form-label col-sm-4 pt-0">Gender</legend>
+                                <div class="col-sm-6">
+                                    <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="gridRadios" id="male" value="male" checked>
+                                    <label class="form-check-label" for="male">
+                                        Male
+                                    </label>
+                                    </div>
+                                    <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="gridRadios" id="female" value="female">
+                                    <label class="form-check-label" for="female">
+                                        Female
+                                    </label>
+                                    </div>                              
+                                </div>
+                            </div>
+                        </fieldset>
+                    </form>
+                </div>      
             </div>
         </div>
     </body>
