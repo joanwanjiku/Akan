@@ -6,6 +6,7 @@ body{
     width: 90%;
     margin: 0 auto;
     font-family: 'Ubuntu', sans-serif;
+    /* background-color: #c9ada7; */
 }
 
 /* Typography */
@@ -19,13 +20,21 @@ h2{
     font-weight: 600;
     margin: 1em;
 }
+small{
+    background-color: cyan;
+    padding: 0.5em;
+}
 
 /* layout */
 header{
     padding: 2em 0;
-    background: #f8f8f8;
-    border: 2px magenta solid;
+    background: #f2e9e4;
 }
-.background {
-   border: 2px black solid
+
+.details{
+    border: 2px #f8f8f8 solid;
+    background: #f2e9e4;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+    margin: 2em 0;
+    padding: 2em;
 }
