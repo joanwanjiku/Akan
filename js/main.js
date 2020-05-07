@@ -1,9 +1,10 @@
 let btn = document.getElementById('submitBtn');
 
 btn.addEventListener('click', () =>{    
-        validateDate()
+    validateDate()
+    // clear the input fields
 })
-// 
+// validation for date and gender
 const validateDate = () => {
     let date = document.getElementById('date').value;
     let radioBtns = document.querySelectorAll('input[name="gridRadios"]');
@@ -17,12 +18,21 @@ const validateDate = () => {
     if (date === "" || selectedGender === undefined){
         errorMsg.classList.add('error');
     }else {
-        // btn.removeAttribute('disabled', '')   
-        console.log(`  ${date} ${selectedGender}`)
+        console.log(`${date} ${selectedGender}`)
         errorMsg.classList.remove('error');
     }
 }
-const findAkanName = (date, gender) => {
 
+// returns an Akan name
+const findAkanName = (date, gender) => {
+    let cc = date.split('-')[0].slice(0, 2);
+    let yy = date.split('-')[0].slice(2, date.split('-')[0].length);
+    let month = date.split('-')[1];
+    let day = date.split('-')[2];
+    let maleNames = [ 'Kwasi', 'Kwadwo', 'Kwabena', 'Kwaku', 'Yaw', 'Kofi', 'Kwame']
+    let femaleNames = [ 'Akosua', 'Adwoa', 'Abenaa', 'Akua', 'Yaa', 'Afua', 'Ama']
+    let dayOfTheWeek = parseInt((((cc / 4) - 2 * cc - 1) + (5 * yy / 4) + (26 * (month + 1) / 10) + day) % 7)
+  
 }
+
 
