@@ -32,6 +32,9 @@ small{
     background-color: cyan;
     padding: 0.5em;
 }
+#akan{
+    font-weight: bold;
+}
 
 /* layout */
 header{
@@ -46,3 +49,18 @@ header{
     margin: 2em 0;
     padding: 2em;
 }
+.result{
+    
+    display: flex;
+    /* border: 1px black solid; */
+
+}
+.result p:last-child{
+    margin-left:.5em;
+    border-left: 2px magenta solid;
+    padding: 0.1em;
+    background: white;
+    font-style: italic;
+    /* font-weight: ; */
+}
+
