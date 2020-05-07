@@ -1,5 +1,4 @@
 let btn = document.getElementById('submitBtn');
-
 btn.addEventListener('click', () =>{    
     validateDate()
     // clear the input fields
@@ -18,7 +17,8 @@ const validateDate = () => {
     if (date === "" || selectedGender === undefined){
         errorMsg.classList.add('error');
     }else {
-        console.log(`${date} ${selectedGender}`)
+        // console.log(`${date} ${selectedGender}`)
+        findAkanName(date, selectedGender);
         errorMsg.classList.remove('error');
     }
 }
@@ -34,11 +34,12 @@ const findAkanName = (date, gender) => {
     let femaleNames = [ 'Akosua', 'Adwoa', 'Abenaa', 'Akua', 'Yaa', 'Afua', 'Ama']
     let dayOfTheWeek = parseInt((((cc / 4) - 2 * cc - 1) + (5 * yy / 4) + (26 * (month + 1) / 10) + day) % 7)
     if (gender == 'female'){
-        return femaleNames[dayOfTheWeek];
+        document.getElementById('akan').innerHTML = femaleNames[dayOfTheWeek];
     }else {
-        return maleNames[dayOfTheWeek];
+        document.getElementById('akan').innerHTML = maleNames[dayOfTheWeek];
     }   
   
 }
+
 
 
