@@ -8,13 +8,13 @@ body{
     font-family: 'Ubuntu', sans-serif;
     /* background-color: #c9ada7; */
 }
-.error::after{
+.error::before{
     background-color: rgba(255, 41, 41, 0.3);
-    text-align: center;
     font-weight: bold;
-    width: 50%;
-    margin:0.5em auto;
-    content: 'date cannot be empty';
+    border: 1px magenta solid;
+    padding: .5em;
+    font-size: .75rem;
+    content: 'Date is empty or Gender is not picked';
 }
 
 /* Typography */
