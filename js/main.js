@@ -2,6 +2,7 @@ let btn = document.getElementById('submitBtn');
 btn.addEventListener('click', () =>{    
     validateDate()
     // clear the input fields
+    document.getElementById('akanForm').reset();
 })
 // validation for date and gender
 const validateDate = () => {
