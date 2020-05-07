@@ -25,6 +25,7 @@ const validateDate = () => {
 
 // returns an Akan name
 const findAkanName = (date, gender) => {
+/* Day of the week (d) = ( ( (CC/4) -2*CC-1) + ((5*YY/4) ) + ((26*(MM+1)/10)) + DD ) mod 7  */
     let cc = date.split('-')[0].slice(0, 2);
     let yy = date.split('-')[0].slice(2, date.split('-')[0].length);
     let month = date.split('-')[1];
@@ -32,6 +33,11 @@ const findAkanName = (date, gender) => {
     let maleNames = [ 'Kwasi', 'Kwadwo', 'Kwabena', 'Kwaku', 'Yaw', 'Kofi', 'Kwame']
     let femaleNames = [ 'Akosua', 'Adwoa', 'Abenaa', 'Akua', 'Yaa', 'Afua', 'Ama']
     let dayOfTheWeek = parseInt((((cc / 4) - 2 * cc - 1) + (5 * yy / 4) + (26 * (month + 1) / 10) + day) % 7)
+    if (gender == 'female'){
+        return femaleNames[dayOfTheWeek];
+    }else {
+        return maleNames[dayOfTheWeek];
+    }   
   
 }
 
