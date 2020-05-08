@@ -1,6 +1,7 @@
 # Akan Generator
 Akan Generator is a simple web app that allows the user to input His/Her birthdate and gender and it returns his/her **Akan**(A naming system practised by some west African countries) name.
-![Image of Web app](./images/ak.png)
+
+<img src = "./images/ak.png" style = "border: 1px black solid">
 ## Prerequisites
 - Have Git installed.
 - Have a text editor installed e.g VS Code, Atom
@@ -17,6 +18,6 @@ To run the application:-
 
 #### Author
 - Joan Wanjiku
-    - [Email](joanevans18@gmail.com)
+    - joanevans18@gmail.com
 #### License
 Copyright &copy; 2020, Joan Evans
