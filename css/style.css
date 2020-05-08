@@ -5,7 +5,8 @@ font-family: 'Ubuntu', sans-serif; */
 body{
     width: 90%;
     margin: 0 auto;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Lora', sans-serif;
+
     /* background-color: #c9ada7; */
 }
 .error::before{

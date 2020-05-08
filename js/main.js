@@ -38,7 +38,7 @@ const findAkanName = (date, gender) => {
         document.getElementById('akan').innerHTML = femaleNames[dayOfTheWeek];
     }else {
         document.getElementById('akan').innerHTML = maleNames[dayOfTheWeek];
-    }   
+    }
   
 }
 
