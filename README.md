@@ -5,8 +5,8 @@ Akan Generator is a simple web app that allows the user to input His/Her birthda
 - Have Git installed.
 - Have a text editor installed e.g VS Code, Atom
 ### Technologies Used
--HTML, CSS, Bootstrap and JavaScript
--Any text editor of your choise.
+- HTML, CSS, Bootstrap and JavaScript
+- Any text editor of your choise.
 ### Setup Installation
 To run the application:-
 1. Clone the repository to a folder in your machine using `https://github.com/joanwanjiku/Akan.git`
